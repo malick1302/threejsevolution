@@ -5,8 +5,7 @@ let camera, scene, renderer;
 function main() {
 //Création d'une nouvelle scene de couleur grise claire
 scene = new THREE.Scene();
-scene.background = new THREE.Color(0xAAFFF);
-
+scene.background = new THREE.Color(0xAAFAF);
 //creation de la camera : 
 //field of view a 40
 const fov = 40;
