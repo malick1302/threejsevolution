@@ -5,7 +5,7 @@ let camera, scene, renderer;
 function main() {
 //Création d'une nouvelle scene de couleur grise claire
 scene = new THREE.Scene();
-scene.background = new THREE.Color(0xAAAAAA);
+scene.background = new THREE.Color(0xAAFFF);
 
 //creation de la camera : 
 //field of view a 40
@@ -26,6 +26,8 @@ renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('c') });
 // Ajuste la taille du rendu
 renderer.setSize(window.innerWidth, window.innerHeight); 
 
+    //Ajoute rla lumière 
+    addLights();
 
     // Ajouter un Torus Knot à la scène
     addTorusKnot(0, 0);
@@ -35,7 +37,17 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
 
+// Ajout des lumières
+function addLights() {
+    // Lumière ambiante (éclaire toute la scène uniformément)
+    const ambientLight = new THREE.AmbientLight(0x404040, 1); // couleur et intensité
+    scene.add(ambientLight);
 
+    // Lumière directionnelle (éclaire avec un certain angle)
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1); // couleur et intensité
+    directionalLight.position.set(10, 10, 10); // position de la lumière
+    scene.add(directionalLight);
+}
 
 //Creation d'une fonction une postion X et Y et un object 3D
 //Puis sl'ajoute a la scène
@@ -72,11 +84,11 @@ const material = new THREE.MeshPhongMaterial({
     side : THREE.DoubleSide,
 })
 //HUe correspond a la teinte
-const hue = Math.random(); 
+const hue = 0.70; 
 //LA saturation est compris entre 0 et 1 
-const saturation = 1;
+const saturation = 0.78;
 //LUminosité comprise entre 0 et 1 (1 = noir)
-const luminance = 0.5; 
+const luminance = 0.8; 
 material.color.setHSL(hue, saturation, luminance);
 
 return material;
