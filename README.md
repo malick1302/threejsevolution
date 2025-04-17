@@ -4,9 +4,9 @@ ici, vous pouvez trouvez mon évolution au sujet de la librairie THREEJS
 
 ## PROJETS 👾
 
-3 - Créer le Jeu Snake en y ajoutant du 3D au niveau de la nouttirture et du serpent 🐍
-2 - Création de la forme Torus et la faire bouger
-1 - Création d'un cube en 3D 
+ - 3 - Créer le Jeu Snake en y ajoutant du 3D au niveau de la nouttirture et du serpent 🐍
+ - 2 - Création de la forme Torus et la faire bouger
+- 1 - Création d'un cube en 3D 
 
 ## UTILISATION 🤓
 
