@@ -1,14 +1,14 @@
-# THREEJS EVOLUTION
+# 🏁 THREEJS EVOLUTION 🏁
 
 ici, vous pouvez trouvez mon évolution au sujet de la librairie THREEJS
 
-## PROJETS
+## PROJETS 👾
 
-3 - Créer le Jeu Sanke en y ajoutant du 3D au niveau de la nouttirture et du serpent
-2 - Création du form Torus et la faire bouger
+3 - Créer le Jeu Snake en y ajoutant du 3D au niveau de la nouttirture et du serpent 🐍
+2 - Création de la forme Torus et la faire bouger
 1 - Création d'un cube en 3D 
 
-## Utilisation
+## UTILISATION 🤓
 
 - git clone le repositery : git@github.com:malick1302/threejsevolution.git
 - cd le nom du projet que vous souhaiter checker.
